@@ -1,0 +1,215 @@
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box; /* to avoid overflow*/
+	font-family: 'Share Tech Mono', monospace;
+}
+
+body {
+	background-image: url('https://i.ytimg.com/vi/5-LyRjHlRgQ/maxresdefault.jpg');
+}
+
+.wrapper {
+	width: 80%;
+	margin: 0 auto; /*to center the wrapper*/
+	background-color: #fff;
+}
+
+/*div	{
+	padding: 20px;
+}*/
+
+
+p {
+	position: static; /*Default position*/
+	/*margin-left: 50px;*/
+	/*margin-top: -20px;*/ 
+}
+
+
+main.wrapper > p {
+	height: 1000px;
+	background-color: #efefef;
+	position: relative;
+	top: 70px;
+}
+
+/*
+ *
+ * Page 3 CSS Rules
+ *
+ */
+
+/* div {
+ 	width: 100px;
+ 	height: 100px;
+ 	border: 1px solid #000;
+ 	position: absolute;
+
+ }*/
+
+ .menu	{
+ 	height: 300px;
+ 	background: url('http://www.ghanalive.tv/wp-content/uploads/2017/03/DS.jpg') 1% 1% no-repeat;
+ 	background-size: 1030px 500px;
+ 	background-position: center;
+	background-color: #b2d6ff; /* Blue */
+	text-align: center;
+	font-size: 50px;
+	line-height: 300px;
+ }
+
+ .sidebar {
+ 	height: 312px;
+ 	background-color: #517293; /* Red */
+ 	width: 20%;
+	float: left; /*possible value: right, none, left*/
+ 	/*height: 100%;*/
+ 	padding-left: 50px;
+ 	padding-top: 30px;
+ 	font-size: 25px;
+ } 
+
+.content {
+	/*height: 500px;*/
+	background-color: #99b3ca;
+	width: 80%;
+	float: left;
+	padding: 20px;
+}
+
+div.content > p {
+	margin-bottom: 10px;
+}
+
+.article-image {
+	width: 300px;
+	/*height: 200px;*/
+	float: left;
+	margin-right: 20px;
+	margin-bottom: 20px;
+}
+
+.comments {
+	/*height: 200px;*/
+	background-color: #375675;
+	clear: both; /*this will offset floating effect*/
+}
+
+.avatar {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px; 
+	border-radius: 	50%;
+	background-image: url('https://filioneadbokasiya.files.wordpress.com/2015/09/av4i9jrx6cfxp2vcv5ni.jpeg?w=300&h=300&crop=1');
+	background-size: 70px;	
+}
+
+.avatar2 {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px; 
+	border-radius: 	50%;
+	background-image: url('https://i2.wp.com/militaryhistorynow.com/wp-content/uploads/2015/07/Unclesamwantyou.jpg?fit=800%2C565');
+	background-size: 70px;		
+}
+
+.avatar3 {
+	width: 60px;
+	height: 60px;
+	background-color: #d639fe;
+	float: left;
+	margin-right: 25px; 
+	border-radius: 	50%;
+	background-image: url('http://www.information-britain.co.uk/showpic2.php?dir=institutions&placeid=39&width=250');
+	background-size: 70px;		
+}
+
+.username {
+	margin-bottom: 15px;
+}
+
+h3.username + p {
+	overflow: hidden;
+}
+
+.page {
+	/*border: 1px solid red;*/
+	/*height: 500px;*/
+}
+
+/*
+ *
+ * Best way to clear floats
+ *
+ */
+
+ .clear:after {
+ 	content: "";
+ 	display: block;
+ 	clear: both;
+ }
+
+ /*
+ *
+ * Columns
+ *
+ */
+
+ .column {
+ 	background-color: #82a1b5;
+ 	height: 160px;
+ 	width: 31%;
+ 	margin:	20px 1.16%;
+ 	/*border: 1px solid red;*/ /*For Testing*/
+ 	float: 	left;
+ 	padding: 15px;
+ 	/*overflow: hidden;*/
+ 	position: relative;
+ }
+
+ /*
+ *
+ * Managing text-overflow with multiline suypport
+ *
+ */
+
+ .block-with-text {
+ 	overflow: hidden;
+ 	position: relative;
+ 	line-height: 1.2em; /*em = default font-size, 16px*/
+ 	max-height: 3.6em;
+ 	text-align: left;
+ 	margin-right: -1em;
+ 	padding-right: 30px; 
+ }
+ .block-with-text:before {
+ 	content: "...";
+ 	position: absolute;
+ 	right: 17px;
+ 	bottom: 0;
+
+ }
+ .block-with-text:after {
+ 	content: "";
+ 	position: absolute;	
+ 	right: 70px;
+ 	width: 1em;
+ 	height: 1em;
+ 	margin-top: 0.2em;
+ 	background-color: #b2d6ff; 	
+ }
+
+.read-more {
+	position: absolute;
+	right: 25px;
+	bottom: 25px;
+}
+
+.footer {
+	text-align: center;
+}
